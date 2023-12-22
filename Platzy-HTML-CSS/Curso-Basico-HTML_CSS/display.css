@@ -1,0 +1,27 @@
+/* quito los margenes q tiene por defecto el body */
+bady { 
+    margin: 0;
+}
+
+div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+a {
+    /* inline NO tiene width y heigth*/
+    background-color: rgba(134, 134, 207, 0.647);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    /* display: inline-block; */ /* con esta propiedad se activan las propiedades anteriores */
+}
+
+button {
+    background-color: rgba(134, 207, 173, 0.647);
+    width: 100px;
+    height: 100px;
+    margin: 20px;    
+}

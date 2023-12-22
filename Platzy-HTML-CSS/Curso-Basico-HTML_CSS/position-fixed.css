@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+  }
+  
+  /* Desplázate por el documento y después quita los comentarios y observa el comportamiento */
+  
+  nav {/* si quito position y top LA nav qda fija */
+    position: fixed;
+    top: 0;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  p {
+    padding: 10px;
+  }
