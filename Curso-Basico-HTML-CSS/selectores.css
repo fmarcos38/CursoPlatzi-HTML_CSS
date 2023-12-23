@@ -1,0 +1,73 @@
+/* selector etiqta */
+h3 {
+    color: coral;
+}
+
+/* selector de clase */
+.titulo{
+    color: red;
+}
+.div-bici{
+    background-color: aqua;
+}
+
+/* pseudoclase */
+.contParrafaos p:nth-child(2){
+    color: rgb(56, 239, 56);
+}
+
+/* pseudoelemnto */
+.contParrafaos p::first-letter{
+    font-size: 2em;
+    color: royalblue;
+}
+p::before{
+    content: 👀;
+}
+
+/* selector de atributo */
+a[href='http://nosotros.com'] {
+    /* Todas las etiquetas <a> con una propiedad href con valor "https://platzi.com" */
+}
+
+/* selector de id */
+#comprar{
+    color:blue
+}
+#comprar:hover{ /* PSEUDOCLASE cuando el mouse pasa por encima */
+    color: red;
+}
+
+
+/* selectores combinados */
+/* descendiente */
+header nav {
+    /* Todas las etiquetas <nav> que estén dentro de una etiqueta <header> */
+}
+div p {
+    /* Todas las etiquetas <p> que estén dentro de una etiqueta <div> */
+}
+
+/* hijo */
+header > nav {
+    /* Todas las etiquetas <nav> que sean hijos directos de una etiqueta <header> */
+}
+div > p {
+    /* Todas las etiquetas <p> que sean hijos directos de una etiqueta <div> */
+}
+
+/* elemento adyacente */
+header + nav {
+    /* Todas las etiquetas <nav> que sean hermanos adyacentes de una etiqueta <header> */
+}
+div + p {
+    /* Todas las etiquetas <p> que sean hermanos adyacentes de una etiqueta <div> */
+}
+
+/* hermano general */
+header ~ nav {
+    /* Todas las etiquetas <nav> que sean hermanos generales de una etiqueta <header> */
+}
+div ~ p {
+    /* Todas las etiquetas <p> que sean hermanos generales de una etiqueta <div> */
+}

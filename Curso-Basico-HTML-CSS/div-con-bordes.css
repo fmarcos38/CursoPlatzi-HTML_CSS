@@ -1,0 +1,16 @@
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+.circulo{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 10px solid black;
+    border-radius: 50%;
+}

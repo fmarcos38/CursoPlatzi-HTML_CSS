@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+
+.div-padre{
+    display: grid; 
+    justify-content: center; 
+}
+/* para los divs hijos */
+.div-padre div{
+    width: 50px;
+    height: 50px;
+}
+
+.div-padre div:nth-child(2n){
+    background-color: red;
+}
+
+.div-padre div:nth-child(2n+1){
+    background-color: blue;
+}
+
+/* ---------------------------------------------- */
+
+/* 
+    crear grilla con  grid-template-columns 
+*/
+.div-padre2{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.div-padre2 div:nth-child(1){
+    grid-column: 1/2;
+    background-color: blue;
+}
+.div-padre2 div:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: red;
+}
+.div-padre2 div:nth-child(3){
+    grid-column: 3/3;
+    grid-row: 3/3;
+    background-color: blue;
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+/* Importante el position */
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+}
+
+/* Quita los comentarios y observa el comportamiento */
+.container .absolute {
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+
+.container div:nth-child(2n) {
+    background-color: aqua;
+}
+
+.container div:nth-child(2n+1) {
+    background-color: brown;
+}

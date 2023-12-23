@@ -1,0 +1,133 @@
+/* 
+    JUSTIFY-CONTENT: [ALINEA EN EJE X]
+
+    flex-start: alinea a la izquierda
+    flex-end: alinea a la derecha
+    center: alinea al centro
+    space-between: ocupa todo el espacio del padre, pero con espacio entre los hijos
+    space-around: ocupa todo el espacio del padre PERO con espacio entre los hijos
+
+    ALIGN-ITEMS [ALINEA EN EJE Y]
+
+*/
+
+/* ocupar todo el espacio del padre, pero con espacio entre los hijos */
+/* .padre{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: skyblue;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(13, 13, 14);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+} */
+/* -------------------------------------------------------- */
+
+/* ocupar todo el espacio del padre PERO con espacio entre los hijos */
+/* .padre{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: skyblue;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(13, 13, 14);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+} */
+/* -------------------------------------------------------- */
+
+/* centrar los hijos DENTRO del padre Y q el cont de los hijos tamb esté centrado */
+.padre{
+    display: flex;
+    justify-content: space-between; /* si cambio aquí es PARA el espacio entre hijos */
+    align-items: center;
+    background-color: skyblue;
+    height: 200px;
+}
+.hijo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(13, 13, 14);
+    color: #fff;
+    font-size: 30px;
+    text-align: center; /* para centrar los numeros */
+    line-height: 100px; /* para centrar los numeros */
+}
+
+/* -------------------------------------------------------- */
+/* alinear pero en columna NO en fila */
+.padre2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column;
+    background-color: skyblue;
+    height: 200px;
+}
+.hijo2{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(13, 13, 14);
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center; /* para centrar los numeros eje X*/
+    align-items: center; /* para centrar los numeros eje Y*/
+}
+/* -------------------------------------------------------- */
+/* alinear pero en columna NO en fila PERO direccion INVERTIDA*/
+.padre3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: skyblue;
+    height: 200px;
+}
+.hijo3{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(13, 13, 14);
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center; /* para centrar los numeros eje X*/
+    align-items: center; /* para centrar los numeros eje Y*/
+}
+/* -------------------------------------------------------- */
+/* centrar los hijos DENTRO del padre Y q el cont de los hijos tamb esté centrado 
+    PERO INVERTIDO
+*/
+.padre4{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* si cambio aquí es PARA el espacio entre hijos */
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: skyblue;
+    height: 200px;
+}
+.hijo4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(13, 13, 14);
+    color: #fff;
+    font-size: 30px;
+    text-align: center; /* para centrar los numeros */
+    line-height: 100px; /* para centrar los numeros */
+}
