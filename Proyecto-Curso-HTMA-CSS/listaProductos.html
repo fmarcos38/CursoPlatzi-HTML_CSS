@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Prods</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            /* creo las columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .imgCaard {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .cont-textYicono {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .cont-textYicono div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+
+        .cont-textYicono div p:nth-child(2) {
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--very-light-pink);
+        }
+
+        @media screen and (max-width: 750px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                /* creo las columnas */
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .card {
+                width: 140px;
+            }
+
+            .imgCaard {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section claass="contGral">
+        <div class="cards-container">
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+
+</html>
