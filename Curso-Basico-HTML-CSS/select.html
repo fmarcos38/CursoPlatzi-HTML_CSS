@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <style>
+.separador{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Método clásico</h2>
+            <select name="cursos" id="">
+                <option value="javascript">JavaScript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+        </section>
+        <div class="separador"></div>
+        <section>
+            <h2>Buenas prácticas(y apto mobiles)</h2>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </datalist>
+        </section>
+    </main>
+</body>
+</html>

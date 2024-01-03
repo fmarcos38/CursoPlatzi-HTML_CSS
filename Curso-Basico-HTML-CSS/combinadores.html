@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /* hermano cercano */
+        /* color rojo a todas las etiqtas p cercanas a una h2 */
+        h2 + p {
+            color: red;
+        }
+
+        /* hernano */        
+        h2 ~ p {
+            color: rgb(0, 55, 255);
+        }
+        /* hijos */
+        /* etiqtas p hijas directas de etiqtas div */
+        div > p {
+            color: rgb(0, 255, 0);
+        }
+        /* descendientes */
+        /* etiqtas p descendientes de etiqtas article */
+        article p {
+            color: rgb(255, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>soy un h2</h2>
+        <p>soy un p</p>  
+        <h2>soy un h2</h2>      
+        <h3>soy un h3</h3>        
+        <p>soy un p</p>        
+    </div>
+
+    <div>
+        <article>
+            <p>soy p dentro de article dentro de div</p>
+        </article>
+        <article>
+            <p>soy p dentro de article dentro de div</p>
+        </article>
+        <section>
+            <div>
+                <p>soy dentro de div dentro de section dentro de div</p>
+            </div>
+        </section>
+        <p>soy p dentro de div</p>
+    </div>
+</body>
+</html>

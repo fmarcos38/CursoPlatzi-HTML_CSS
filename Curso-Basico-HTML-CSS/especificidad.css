@@ -1,0 +1,11 @@
+h1{ /* especificidad 0,0,1 */
+    color: red;
+}
+
+#page-title{
+    color: blue;
+}
+
+.title{
+    color: salmon;
+}

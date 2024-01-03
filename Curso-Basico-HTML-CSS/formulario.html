@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 1px solid black;
+        }
+        .form div{
+            margin: 0.5rem;
+        }
+    </style>
+    <title>Formulario</title>
+</head>
+<body>
+    <main>        
+        <section>
+            <form action="" class="form">
+                <div>
+                    <label for="hora">
+                    <span>Elije hora: </span>
+                    <input type="time" id="hora">
+                </label>
+                </div>
+                <div>
+                    <label for="dia">
+                        <span>Elije día: </span>
+                        <input type="date" id="dia">
+                    </label>
+                </div>
+                <div>
+                    <label for="semana">
+                        <span>Elije semana: </span>
+                        <input type="week" id="semana">
+                    </label>
+                </div>
+                <div>
+                    <label for="mes">
+                        <span>Elije mes: </span>
+                        <input type="month" id="mes">
+                    </label>
+                </div>
+                <div>
+                    <label for="horaLocal">
+                        <span>Elije tu hora lcal: </span>
+                        <input type="datetime-local" id="horaLocal">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="enviar"/>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

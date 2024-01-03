@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .padre{
+            border: 2px black dotted;
+            display: inline-block;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+        #two{
+            background-color: chartreuse;
+            /* position: relative; */
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        h2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .padre2{
+            display: inline-block;            
+        }
+        .cont1{
+            width: 200px;
+            height: auto;
+            background-color: red;
+            border: 1mp black solid;
+            display: inline-block;
+            position: absolute;
+            top:160px;
+            left: 50px;
+        }
+        .cont2{
+            width: 300px;
+            height: auto;
+            background-color: chartreuse;
+            border: 1mp black solid;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
+        <div class="box" id="three">3</div>
+        <div class="box" id="four">4</div>
+    </div>
+
+    <h2>----- Otro ejem-----</h2>
+
+    <div class="padre2">
+        <div class="cont1">
+            <p>Hola mundo</p>
+        </div>
+        <div class="cont2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, assumenda! Quis cupiditate similique dolores exercitationem voluptatem inventore blanditiis reiciendis esse soluta eum facilis dolore mollitia, ullam sed ex repellat nobis?
+            Quae, velit? Autem facere temporibus quas quisquam modi architecto cum saepe perspiciatis expedita beatae! Cupiditate iusto et sint repellat quam quasi. Veritatis quaerat ad voluptatem assumenda, laudantium blanditiis laboriosam officiis.</p>
+        </div>
+    </div>
+</body>
+</html>
