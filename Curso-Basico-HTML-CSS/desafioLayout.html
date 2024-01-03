@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            width: 100%;
+            height: 8vh;
+        }
+        .escuudo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        main{
+            display: flex;
+            width: 100%;
+            height: 84vh;
+            background-color: bisque;
+        }
+        .barra-lateral{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            width: 25%;
+            background-color: aquamarine;
+        }
+        .barra-lateral-item{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            width: 65%;
+            margin-bottom: 0.5rem;
+            padding: 10px;
+            border: 1px black solid;
+        }
+        .img-item{
+            margin-left: 10px;
+            width: 40%;
+            height: 40%;
+            border-radius: 50%;
+        }
+        .titulo-item{
+            margin-left: 10px;
+        }
+        .productos{
+            display: flex;
+            justify-content:center;
+            flex-direction: row;
+            width: 75%;
+            height: 100%;
+            background-color: silver;
+        }
+        .img-producto{
+            width: 80%;
+            height: 80%;
+        }
+        .card-producto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0.5rem;
+            padding: 10px;
+            width: 20%;
+            height: 45%;
+            border: 1px black solid;
+        }
+
+        footer{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            width: 100%;
+            height: 7vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="izq">
+                <a href="#">
+                    <img src="https://acdn.mitiendanube.com/stores/001/003/277/products/img_77371-e12d5d57edf624cd2816845216829401-480-0.jpg" alt="not found" class="escuudo">
+                </a>
+            </div>
+            <div class="center">
+                <h3>Club Atletico San Lorenzo de Almagro</h3>
+            </div>
+            <div class="der">
+                <buttom>🔍</buttom>
+                <buttom>🛒</buttom>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="barra-lateral">
+            <div class="barra-lateral-item">
+                <h3 class="titulo-item">Remeras</h3>
+                <img 
+                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-item"
+                >
+            </div>
+            <div class="barra-lateral-item">
+                <h3 class="titulo-item">Remeras</h3>
+                <img 
+                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-item"
+                >
+            </div>
+            <div class="barra-lateral-item">
+                <h3 class="titulo-item">Remeras</h3>
+                <img 
+                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-item"
+                >
+            </div>
+            <div class="barra-lateral-item">
+                <h3 class="titulo-item">Remeras</h3>
+                <img 
+                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-item"
+                >
+            </div>
+        </section>
+
+        <section class="productos">
+            <div class="card-producto">
+                <button>❤️</button>
+                <img 
+                    src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-producto"
+                >
+                <span>Camiset Nike Alternativa 2023</span>
+                <span>$ 60.000</span>
+            </div>
+
+            <div class="card-producto">
+                <button>❤️</button>
+                <img 
+                    src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-producto"
+                >
+                <span>Camiset Nike Alternativa 2023</span>
+                <span>$ 60.000</span>
+            </div>
+
+            <div class="card-producto">
+                <button>❤️</button>
+                <img 
+                    src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-producto"
+                >
+                <span>Camiset Nike Alternativa 2023</span>
+                <span>$ 60.000</span>
+            </div>
+
+            <div class="card-producto">
+                <button>❤️</button>
+                <img 
+                    src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
+                    alt="not" 
+                    class="img-producto"
+                >
+                <span>Camiset Nike Alternativa 2023</span>
+                <span>$ 60.000</span>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="izq">
+            <h4>Horarios:</h4>
+            <p>Lunes a Viernes de 9 a 18hs</p>
+        </div>
+        <div clss="center">
+            <h4>Contactos:</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="der">
+            <h4>Medios de Pago</h4>            
+        </div>
+    </footer>
+</body>
+</html>

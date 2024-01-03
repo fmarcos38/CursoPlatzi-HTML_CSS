@@ -5,60 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .cont-display-block{
+        .cont-display-block{ /* display block UTILIZA el 100% del width */
+            /* puedo variar esto con las distintas opciones de position */
             border: 1px black solid;
+            /* position: absolute; */
             display: block;
+            background-color: aquamarine;
         }
 
+        /* display inline NO UTILIZA el 100% del width */
+        /* no le puedo dar margin y pading */
         .cont-display-inline{
-            border: 1px rgb(188, 37, 37) solid;
             display: inline;
+            background-color: bisque;
+            border: 1px black solid;
         }
-
+        /* display inline-block SI UTILIZA el 100% del width  y deja q se pongan uno al lado del otro*/
         .cont-display-inline-block{
             border: 1px rgb(86, 207, 171) solid;
             display: inline-block;
+            background-color: silver;
+            margin: 0px 10px 0px 10px; /* le puedo agregar margin de costados */
+            padding-left: 20px; /* le puedo agregar padding de costados */
+            padding-right: 20px; /* le puedo agregar padding de costados */
         }
     </style>
 </head>
 <body>
-    <div class="cont-display-block">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+    <div>
+        <div class="cont-display-block">1</div>
+        <div class="cont-display-block">2</div>
+        <div class="cont-display-block">3</div>
     </div>
     
     <br/>
     <br/>
 
-    <div class="cont-display-inline">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+    <div>
+        <p class="cont-display-inline">1</p>
+        <p class="cont-display-inline">2</p>
+        <p class="cont-display-inline">3</p>
     </div>
     
     <br/>
     <br/>
     
-    <div class="cont-display-inline-block">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+    <div>
+        <div class="cont-display-inline-block">1</div>
+        <div class="cont-display-inline-block">2</div>
+        <div class="cont-display-inline-block">3</div>
     </div>
 
     <br/>
     <br/>
 
-    <span>ww</span>
     <span>ww</span>
     <span>ww</span>
     <span>ww</span>
