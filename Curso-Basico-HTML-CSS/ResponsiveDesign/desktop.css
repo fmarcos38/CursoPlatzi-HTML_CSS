@@ -1,0 +1,18 @@
+@media screen and (min-width: 800px){
+    .container{ /* solo va a crecer hasta 800px */
+        width: 800px;
+        margin: 0 auto;
+    }
+    .c1{
+        width: 100%;
+    }
+    .c2{
+        width: 50%;
+    }
+    .c3, .c4{
+        width: 33%;
+    }
+    .c5{
+        width: 100%;
+    }
+}

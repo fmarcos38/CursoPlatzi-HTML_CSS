@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felxbox responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            font-size: 1.6rem;
+        }
+        main{
+            border: 0.3rem solid black;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* con esta configuracion los box se reducen hasta sierto tamaño y van baajando hasta qdar 1 col */
+        .box{
+            flex-basis: 10rem; /* tamaño base */
+            flex-grow: 1; /* crece en proporcion al espacio disponible */            
+            height: 10rem;
+            display: flex; /* para alinear cont de c/box */
+            justify-content: center; /* centra horizontalmente */
+            align-items: center; /* centra verticalmente */
+            /* se lo podría aplicar a solo un box */
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: red;
+        }
+        .box4{
+            background-color: blue;
+        }
+        .box5{
+            background-color: red;
+        }
+        .box6{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="box box1">M</div>
+            <div class="box box2">A</div>
+            <div class="box box3">R</div>
+            <div class="box box4">C</div>
+            <div class="box box5">O</div>
+            <div class="box box6">S</div>
+        </section>
+    </main>
+</body>
+</html>

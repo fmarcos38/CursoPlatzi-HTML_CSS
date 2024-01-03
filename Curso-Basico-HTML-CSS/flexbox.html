@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            font-size: 1.6rem;
+        }
+        .container-columnas{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-tradicional{
+            border: 0.3rem solid black;
+        }
+        .container-tradicional-reverse{ /* en columna */
+            border: 0.3rem solid black;
+            display: flex; 
+            flex-direction: column-reverse;
+        }
+        .container-flexbox{
+            border: 0.3rem solid black;
+            display: flex; /* se posicionan uno al lado del otro */
+            margin-top: 0.5rem;
+        }
+        .container-flexbox-reverse{
+            border: 0.3rem solid black;
+            display: flex; /* se posicionan uno al lado del otro */
+            flex-direction: row-reverse;
+            margin-top: 0.5rem;
+        }
+        .container-flexbox-lineas{ 
+            border: 0.3rem solid black;
+            display: flex; /* se posicionan uno al lado del otro */
+            flex-wrap: wrap; /* para q se acomoden en varias lineas */
+            justify-content: center; /* centra horizontalmente */
+            margin-top: 0.5rem;            
+        }
+        .box{
+            width: 10rem;
+            height: 10rem;
+            display: flex; /* para alinear cont de c/box */
+            justify-content: center; /* centra horizontalmente */
+            align-items: center; /* centra verticalmente */
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: green;
+        }
+        .box4{
+            background-color: yellow;
+        }
+        .box5{
+            background-color: purple;
+        }
+        .box6{
+            background-color: orange;
+        }
+
+
+        /* flexbox alineo vertical en fila */
+        .container-flexbox-vertical{
+            height: 650px;
+            border: 0.3rem solid black;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .container-flexbox-vertical-final{
+            height: 650px;
+            border: 0.3rem solid black;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items:end;
+        }
+        .container-flexbox-vertical-start{
+            height: 650px;
+            border: 0.3rem solid black;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items:start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- sin flex box -->
+        <section>
+            <div class="container-columnas">
+                <!-- columna 1 -->
+                <div class="container-tradicional">
+                    <div class="box1 box">
+                        <p>box1</p>
+                    </div>
+                    <div class="box2 box">
+                        <p>box2</p>
+                    </div>
+                    <div class="box3 box">
+                        <p>box3</p>
+                    </div>
+                    <div class="box4 box">
+                        <p>box4</p>
+                    </div>
+                    <div class="box5 box">
+                        <p>box5</p>
+                    </div>
+                    <div class="box6 box">
+                        <p>box6</p>
+                    </div>
+                </div>
+
+                <!-- columna 2 -->
+                <div class="container-tradicional-reverse">
+                    <div class="box1 box">
+                        <p>box1</p>
+                    </div>
+                    <div class="box2 box">
+                        <p>box2</p>
+                    </div>
+                    <div class="box3 box">
+                        <p>box3</p>
+                    </div>
+                    <div class="box4 box">
+                        <p>box4</p>
+                    </div>
+                    <div class="box5 box">
+                        <p>box5</p>
+                    </div>
+                    <div class="box6 box">
+                        <p>box6</p>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        
+        <!-- con flex box normal -->
+        <section>
+            <div class="container-flexbox">
+                <div class="box1 box">
+                    <p>box1</p>
+                </div>
+                <div class="box2 box">
+                    <p>box2</p>
+                </div>
+                <div class="box3 box">
+                    <p>box3</p>
+                </div>
+                <div class="box4 box">
+                    <p>box4</p>
+                </div>
+                <div class="box5 box">
+                    <p>box5</p>
+                </div>
+                <div class="box6 box">
+                    <p>box6</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- con flex box reverse -->
+        <section>
+            <div class="container-flexbox-reverse">
+                <div class="box1 box">
+                    <p>box1</p>
+                </div>
+                <div class="box2 box">
+                    <p>box2</p>
+                </div>
+                <div class="box3 box">
+                    <p>box3</p>
+                </div>
+                <div class="box4 box">
+                    <p>box4</p>
+                </div>
+                <div class="box5 box">
+                    <p>box5</p>
+                </div>
+                <div class="box6 box">
+                    <p>box6</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- con flex box normal PERO q se acomoden en varias lineas-->
+        <section>
+            <div class="container-flexbox-lineas">
+                <div class="box1 box">
+                    <p>box1</p>
+                </div>
+                <div class="box2 box">
+                    <p>box2</p>
+                </div>
+                <div class="box3 box">
+                    <p>box3</p>
+                </div>
+                <div class="box4 box">
+                    <p>box4</p>
+                </div>
+                <div class="box5 box">
+                    <p>box5</p>
+                </div>
+                <div class="box6 box">
+                    <p>box6</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- mover en forma vertical -->
+        <section>
+            <!-- centrar vertical -->
+            <div class="container-flexbox-vertical">
+                <div class="box1 box">
+                    <p>box1</p>
+                </div>
+                <div class="box2 box">
+                    <p>box2</p>
+                </div>
+                <div class="box3 box">
+                    <p>box3</p>
+                </div>
+                <div class="box4 box">
+                    <p>box4</p>
+                </div>
+                <div class="box5 box">
+                    <p>box5</p>
+                </div>
+                <div class="box6 box">
+                    <p>box6</p>
+                </div>
+            </div>
+
+            <!-- centrar vertical aal final-->
+            <div class="container-flexbox-vertical-final">
+                <div class="box1 box">
+                    <p>box1</p>
+                </div>
+                <div class="box2 box">
+                    <p>box2</p>
+                </div>
+                <div class="box3 box">
+                    <p>box3</p>
+                </div>
+                <div class="box4 box">
+                    <p>box4</p>
+                </div>
+                <div class="box5 box">
+                    <p>box5</p>
+                </div>
+                <div class="box6 box">
+                    <p>box6</p>
+                </div>
+            </div>
+
+            <!-- centrar vertical aal start-->
+            <div class="container-flexbox-vertical-start">
+                <div class="box1 box">
+                    <p>box1</p>
+                </div>
+                <div class="box2 box">
+                    <p>box2</p>
+                </div>
+                <div class="box3 box">
+                    <p>box3</p>
+                </div>
+                <div class="box4 box">
+                    <p>box4</p>
+                </div>
+                <div class="box5 box">
+                    <p>box5</p>
+                </div>
+                <div class="box6 box">
+                    <p>box6</p>
+                </div>
+            </div>
+        </section>
+    </main>    
+</body>
+</html>
