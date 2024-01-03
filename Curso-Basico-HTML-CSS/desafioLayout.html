@@ -16,6 +16,8 @@
             align-items: center;
             width: 100%;
             height: 8vh;
+            background-color: rgb(225, 96, 96);
+            border-bottom: 5px rgb(137, 172, 236) solid;
         }
         .escuudo{
             width: 50px;
@@ -30,8 +32,7 @@
         main{
             display: flex;
             width: 100%;
-            height: 84vh;
-            background-color: bisque;
+            background-color: rgb(137, 172, 236);
         }
         .barra-lateral{
             display: flex;
@@ -39,22 +40,25 @@
             align-items: center;
             flex-direction: column;
             width: 25%;
-            background-color: aquamarine;
+            border-right: 2px cornflowerblue solid;
+            background-color: rgb(225, 96, 96);
+            border-radius: 5px;
         }
         .barra-lateral-item{
             display: flex;
             align-items: center;
-            justify-content:center;
-            width: 65%;
-            margin-bottom: 0.5rem;
-            padding: 10px;
-            border: 1px black solid;
+            justify-content:center; 
+            width: 80%;
+            margin-bottom: 0.5rem;           
+        }
+        .barra-lateral-item:nth-child(1){ /* solo para el 1er hijo */
+            margin-top: 0.5rem;
         }
         .img-item{
             margin-left: 10px;
-            width: 40%;
-            height: 40%;
-            border-radius: 50%;
+            width: 90%;
+            height: 90%;
+            border-radius: 10%;
         }
         .titulo-item{
             margin-left: 10px;
@@ -64,12 +68,16 @@
             justify-content:center;
             flex-direction: row;
             width: 75%;
-            height: 100%;
-            background-color: silver;
+            height: 100vh;
         }
         .img-producto{
             width: 80%;
             height: 80%;
+        }
+        .img-pantalon{
+            width: 98%;
+            height: 65%;
+            background-color: aliceblue;
         }
         .card-producto{
             display: flex;
@@ -82,13 +90,22 @@
             height: 45%;
             border: 1px black solid;
         }
+        .favoritos{
+            border-radius: 50%;
 
+        }
+        .favoritos-pantalon{
+            margin-top: 40px;
+            border-radius: 50%;
+        }
         footer{
             display: flex;
             justify-content:space-around;
             align-items: center;
             width: 100%;
             height: 7vh;
+            background-color: rgb(225, 96, 96);
+            border-top: 5px cornflowerblue solid;
         }
     </style>
 </head>
@@ -113,53 +130,60 @@
     <main>
         <section class="barra-lateral">
             <div class="barra-lateral-item">
-                <h3 class="titulo-item">Remeras</h3>
-                <img 
-                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                <a href="#">
+                    <img 
+                    src="https://acasla.vtexassets.com/assets/vtex.file-manager-graphql/images/935cfb8d-434b-427f-8e2b-6b63fbc7bf13___96e45eac8c9a800f09d8ad669563191c.png" 
                     alt="not" 
                     class="img-item"
                 >
+                </a>                
             </div>
+
             <div class="barra-lateral-item">
-                <h3 class="titulo-item">Remeras</h3>
-                <img 
-                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                <a href="#">
+                    <img 
+                    src="https://acasla.vtexassets.com/assets/vtex.file-manager-graphql/images/f0cdb2ef-b608-4bb7-a199-4668471ebfd9___76374a969479131ac3cea0a69b3585c0.png" 
                     alt="not" 
                     class="img-item"
                 >
+                </a>                
             </div>
+
             <div class="barra-lateral-item">
-                <h3 class="titulo-item">Remeras</h3>
-                <img 
-                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                <a href="#">
+                    <img 
+                    src="https://acasla.vtexassets.com/assets/vtex.file-manager-graphql/images/453dc15c-4f00-42f8-8782-802f3d113896___5c966f4c8539a8259f2cfa8507f6b03b.png" 
                     alt="not" 
                     class="img-item"
                 >
+                </a>                
             </div>
+
             <div class="barra-lateral-item">
-                <h3 class="titulo-item">Remeras</h3>
-                <img 
-                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
+                <a href="#">
+                    <img 
+                    src="https://acasla.vtexassets.com/assets/vtex.file-manager-graphql/images/a5ee6949-b7c7-4bbd-962e-6307d74a13c0___4e33973f740ebd5105f5f4c8c5a4741e.jpg" 
                     alt="not" 
                     class="img-item"
                 >
+                </a>                
             </div>
+            
         </section>
 
         <section class="productos">
-            <div class="card-producto">
-                <button>❤️</button>
+            <div class="card-producto">                
                 <img 
-                    src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
+                    src="https://acasla.vtexassets.com/arquivos/ids/156100-500-auto?v=638188900824070000&width=500&height=auto&aspect=true" 
                     alt="not" 
                     class="img-producto"
                 >
                 <span>Camiset Nike Alternativa 2023</span>
                 <span>$ 60.000</span>
+                <button class="favoritos">❤️</button>
             </div>
 
             <div class="card-producto">
-                <button>❤️</button>
                 <img 
                     src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
                     alt="not" 
@@ -167,28 +191,29 @@
                 >
                 <span>Camiset Nike Alternativa 2023</span>
                 <span>$ 60.000</span>
+                <button class="favoritos">❤️</button>
             </div>
 
             <div class="card-producto">
-                <button>❤️</button>
                 <img 
-                    src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
+                    src="https://afaar.vtexassets.com/arquivos/ids/156101-500-auto?v=638189006833270000&width=500&height=auto&aspect=true" 
                     alt="not" 
-                    class="img-producto"
+                    class="img-pantalon"
                 >
-                <span>Camiset Nike Alternativa 2023</span>
+                <span class="favoritos-pantalon">Camiset Nike Alternativa 2023</span>
                 <span>$ 60.000</span>
+                <button class="favoritos">❤️</button>
             </div>
 
             <div class="card-producto">
-                <button>❤️</button>
                 <img 
-                    src="https://afaar.vtexassets.com/arquivos/ids/156049-1600-auto?v=638186590435700000&width=1600&height=auto&aspect=true" 
+                    src="https://acasla.vtexassets.com/arquivos/ids/155942-500-auto?v=638119849211300000&width=500&height=auto&aspect=true" 
                     alt="not" 
                     class="img-producto"
                 >
                 <span>Camiset Nike Alternativa 2023</span>
                 <span>$ 60.000</span>
+                <button class="favoritos">❤️</button>
             </div>
         </section>
     </main>
