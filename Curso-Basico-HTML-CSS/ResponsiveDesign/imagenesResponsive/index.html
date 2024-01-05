@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de imagens responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- picture se convierte en el ciontenedoor de la etiqta img -->
+        <picture>
+            <!-- en la etiqta source coloco las imagenes para dispositivos mas grandes-->
+            <source media="(min-width: 1000px)" srcset="./images/large.webp">
+            <source media="(min-width: 768px)" srcset="./images/medium.webp">            
+            <!-- en img coloco una imagen de tamaño small(para smarthphones) -->
+            <img src="./images/small.jpg" alt="not found">
+        </picture>
+    </main>
+</body>
+</html>
