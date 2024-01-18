@@ -4,7 +4,7 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const menuMobile = document.querySelector('.mobile-menu');
 const menuHamburgesa = document.querySelector('.menu');
 const iconoCarrito = document.querySelector('.navbar-shopping-cart');
-const asaide = document.querySelector('.product-detail');
+const shopingCartContainer = document.querySelector('#shopingCartContainer');
 const cardContainer = document.querySelector('.cards-container');
 
 //agrego evento click al menu de email
@@ -16,22 +16,22 @@ iconoCarrito.addEventListener('click', iconoCarritoClick);
 
 //funcion para mostrar el menu de email
 function menuEmailClick() {
-    const isAsaideClosed = asaide.classList.contains('inactive'); //si el menu de carrito esta cerrado
+    const isAsaideClosed = shopingCartContainer.classList.contains('inactive'); //si el menu de carrito esta cerrado
 
     if(!isAsaideClosed) { //si el menu de carrito esta abierto
         //cierro el menu de carrito
-        asaide.classList.add('inactive');
+        shopingCartContainer.classList.add('inactive');
     }
 
     desktopMenu.classList.toggle('inactive'); //el nombre de la clase va sin el punto
 }
 //funcion para mostrar el menu de hamburgesa
 function menuHamburgesaClick() {
-    const isAsaideClosed = asaide.classList.contains('inactive'); //si el menu de carrito esta cerrado
+    const isAsaideClosed = shopingCartContainer.classList.contains('inactive'); //si el menu de carrito esta cerrado
     
     if(!isAsaideClosed) { //si el menu de carrito esta abierto
         //cierro el menu de carrito
-        asaide.classList.add('inactive');
+        shopingCartContainer.classList.add('inactive');
     }
 
     menuMobile.classList.toggle('inactive');
@@ -52,7 +52,7 @@ function iconoCarritoClick() {
     }
 
     //muestro el menu de carrito
-    asaide.classList.toggle('inactive');
+    shopingCartContainer.classList.toggle('inactive');
 }
 
 //creo array de productos
@@ -95,13 +95,13 @@ function renderProducts(arrProds) {
         //console.log(product.name); //muestro el nombre del producto
 
         //creo el elemento div
-        const card = document.createElement('div');
+        const productCard = document.createElement('div');
         //agrego la clase al elemento div
-        card.classList.add('card');
+        productCard.classList.add('product-card');
         //creo el elemento img
         const img = document.createElement('img');
         //agrego la clase al elemento img
-        img.classList.add('imgCaard');
+        img.classList.add('imgCard');
         //agrego el atributo src al elemento img
         img.setAttribute('src', product.image);
         //creo el elemento div
@@ -149,12 +149,12 @@ function renderProducts(arrProds) {
         contTextYicono.appendChild(contIcono);
 
         //le introduzco el elemento img al elemento div card
-        card.appendChild(img);
+        productCard.appendChild(img);
         //le introduzco el elemento div contTextYicono al elemento div card
-        card.appendChild(contTextYicono);
+        productCard.appendChild(contTextYicono);
 
         //le introduzco el elemento div card al elemento div cardContainer
-        cardContainer.appendChild(card);
+        cardContainer.appendChild(productCard);
     }
 }
 
