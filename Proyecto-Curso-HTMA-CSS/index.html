@@ -22,31 +22,42 @@
     <nav>
         <img src="./icons/icon_menu.svg" alt="menu" class="menu">
 
-        <div class="contNavLeft">
-            <img src="./logos/logo_yard_sale.svg" alt="logo">
+        <div class="navbar-left">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
 
             <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Clothes</a></li>
-                <li><a href="#">electronics</a></li>
-                <li><a href="#">Furnitures</a></li>
-                <li><a href="#">Toys</a></li>
-                <li><a href="#">Others</a></li>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Others</a>
+                </li>
             </ul>
         </div>
 
-        <div class="contNavRigth">
+        <div class="navbar-right">
             <ul>
-                <li class="navbar-email">
-                    platzi@example.com
-                </li>
+                <li class="navbar-email">platzi@example.com</li>
                 <li class="navbar-shopping-cart">
                     <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
                     <div>2</div>
                 </li>
             </ul>
         </div>
-        <!-- menu personal desplegable -->
+
+        <!-- menu desktop -->
         <div class="desktop-menu inactive">
             <ul>
                 <li>
@@ -62,10 +73,102 @@
                 </li>
             </ul>
         </div>
+
+        <!-- menu mobile -->
+        <div class="mobile-menu inactive">
+            <ul>
+                <li>
+                    <a href="/">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Other</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="/">My orders</a>
+                </li>
+                <li>
+                    <a href="/">My account</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="/" class="email">platzi@example.com</a>
+                </li>
+                <li>
+                    <a href="/" class="sign-out">Sign out</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
+    <!-- asaide del carrito de compras -->
+    <aside class="product-detail inactive">
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="arrow">
+            <p class="title">My order</p>
+        </div>
 
-    <!-- enlace arch JS -->
+        <div class="my-order-content">
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$30,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <button class="primary-button">
+                Checkout
+            </button>
+        </div>
+        </div>
+    </aside>
+
+    <!-- seccion de los productos -->
+    <section claass="contGral">
+        <div class="cards-container">
+
+            <!-- <div class="card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="not" class="imgCaard">
+                <div class="cont-textYicono">
+                    <div>
+                        <p class="">$100</p>
+                        <p class="">Bici TREK</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="not">
+                        </figure>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+    </section>
+
     <script src="./main.js"></script>
 </body>
 
