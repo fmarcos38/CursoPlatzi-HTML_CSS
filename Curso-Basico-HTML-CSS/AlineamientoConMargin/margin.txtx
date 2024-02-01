@@ -1,0 +1,8 @@
+margin-top: 10px;
+margin-rigth: 15px;
+margin-bottom: 20px;
+margin-left: 25px;
+
+//metodo corto
+margin: 10px 15px 20px 25px;
+

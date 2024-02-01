@@ -1,0 +1,5 @@
+text-align: left|rigth|center|justify|initial|inherit //alinea horizontalmnt
+
+vertical-align:  //alinea verticalmnt
+
+line-heigth:  //establece la altura de una casilla remarcada por líneas. Comúnmente se usa para establecer la distancia entre líneas de texto. A nivel de elementos de bloque, define la altura mínima de las casillas encuadradas por líneas dentro del elemento.
