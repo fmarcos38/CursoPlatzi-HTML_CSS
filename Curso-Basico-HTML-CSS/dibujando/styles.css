@@ -1,0 +1,44 @@
+/* declaro variables */
+:root {
+    --skin: #f6c09c;
+    --background: #ed4042;
+    --red: #ed2860;
+    --dark-red: #680524;
+    --black: #00243a;
+    --white: #fff;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* sin el heigth no centra */
+    background-color: rgb(73, 73, 69);
+}
+.head{
+    width: 100px;
+    height: 200px;
+    background-color: var(--skin);
+    border-radius: 50px;
+    position: relative; /* para que los demas elementos se posicione relativo a la cabeza */
+}
+.eye-left{
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+}
+.eye-right{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

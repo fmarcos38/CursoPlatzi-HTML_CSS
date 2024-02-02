@@ -1,0 +1,1 @@
+display: table-cell //convierte un elemnt div por ejem en tabla
