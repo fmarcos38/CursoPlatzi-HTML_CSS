@@ -1,0 +1,41 @@
+/* ejem de grid */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(80px, 500px));
+    /* width: 60px; */
+    height: 200px;
+    /* utilizo area */
+    grid-template-areas:
+        "card-1 card-2"
+        "card-1 card-3";
+}
+.item1, .item2, .item3 {
+    border-style: 1px solid #000;
+    display: flex;
+    /* width: 30px;
+    height: 30px; */
+}
+.item1{
+    background-color: blue;
+    /* le digo donde quiero q empiese y termine tanto para colum como para raw */
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    /* o le doy el nombre q le puse en el AREA */
+    grid-area: card-1;
+}
+.item2{
+    background-color: red;
+    grid-area: card-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item3{
+    background-color: blueviolet;
+    grid-area: card-3;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}

@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    /* si quiero q ocupe todo el ancho uso fr */
+    /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+    /* grid-template: repeat(3, 100px) / repeat(3, 100px); */
+    /* creacion de las col con tamñano min y max */
+    /* grid-template-columns: repeat(3, minmax(50px, 1fr)); */ /* está bueno para las CARDS */
+    /* con auto.fit ocupa todo el ancho y luego va bajando  */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* si le quiero dar espacios entre cuadros */
+    /* gap: 10px; */
+    /* alineacion del contenedor */
+    justify-content: center;
+    align-content: space-around;
+}
+.items,
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+En función Css minmax() el min representa el tamaño mínimo que va a tener cada uno de los elementos de la grid y el max nos indica el valor máximo de los elementos de la grid. Esto nos sirve para que el contenido se vea bien en determinados tamaños.
+
+Con la función de auto-fit() ADAPTA las columnas DISPONIBLES ACTUALMENTE en el espacio expandiéndolas para que ocupen cualquier espacio disponible. El navegador hace eso después de LLENAR ese espacio adicional con columnas adicionales (como con el autocompletar) y luego colapsar las vacías.
+
+Con la función de auto-fill() LLENA la fila con tantas columnas como pueda caber. Por lo tanto, crea columnas implícitas cada vez que cabe una nueva columna, porque está tratando de LLENAR la fila con tantas columnas como sea posible. Las columnas recién agregadas pueden estar vacías, pero seguirán ocupando un espacio designado en la fila.
+Estas funciones con perfectas para el responsive design.
+
+La función fit-content() organiza un contenido en especifico el cual lo reserva y el resto seria auto.
+*/
