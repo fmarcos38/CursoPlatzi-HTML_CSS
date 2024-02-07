@@ -1,0 +1,23 @@
+nav{
+    background-color: pink;
+    width: 60px;
+}
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 10px;
+}
+/* opcion con flex */
+/* li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+} */
+li{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}

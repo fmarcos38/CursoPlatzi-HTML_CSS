@@ -1,0 +1,21 @@
+section{
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "text text text"
+        "side footer footer";
+    width: 300px;
+    background-color: antiquewhite;
+}
+h1{
+    grid-area: header;
+    margin: 0;
+}
+p{
+    grid-area: text;
+    color: cadetblue;
+}
+footer{
+    grid-area: footer;
+    justify-self: end;
+}

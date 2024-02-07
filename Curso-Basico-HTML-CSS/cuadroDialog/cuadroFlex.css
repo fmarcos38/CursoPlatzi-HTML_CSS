@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+section{
+    width: 400px;
+    height: 300px;
+    background-color: antiquewhite;
+}
+section h3 {
+    margin-left: 10px;
+}
+section p{
+    margin-top: 60px;
+    margin-left: 10px;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}

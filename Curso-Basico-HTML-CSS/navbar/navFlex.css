@@ -1,0 +1,25 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.section1, .section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1{
+    margin-left: 20px;
+}
+.icon1{
+    margin-right: 20px;
+}
+.section2{
+    margin-right: 20px;
+}
+.icon3, .icon4{
+    margin-right: 20px;
+}
