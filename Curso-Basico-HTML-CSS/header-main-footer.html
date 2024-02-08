@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* padre flex */
+        /* .padre{
+            height: 100vh;
+        }*/
+        /* padre grid */
+        .padre{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+        header{
+            background-color: red;
+            /* height: 15%; */ /* para flex */
+            padding: 2rem; /* para grid */
+        }
+        main{
+            background-color: green;
+            /* height: 70%; */
+        }
+        footer{
+            background-color: blue;
+            /* height: 15%; */
+            padding: 2rem;
+        } 
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <header>Header</header>
+        <main>Main</main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
