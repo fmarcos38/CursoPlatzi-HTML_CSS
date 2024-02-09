@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    --blue: #EAF0F8;
+}
+
+body {
+    margin: 0;
+    background: var(--blue);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: grid;
+    /* le doy la medida de c/elemento */
+    grid-template-rows: 60px 300px auto auto;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+}
+.card div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: var(--blue);
+    box-shadow:  10px 10px 15px #716d6dcb,
+        -10px -10px 15px #7e7c7c;
+    border-radius: 20px;
+}
+.progress-bar{
+    background-color: green;
+}
+.buttons{
+    background-color: gray;
+}
